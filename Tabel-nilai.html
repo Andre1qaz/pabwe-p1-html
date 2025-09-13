@@ -1,221 +1,322 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Rekap Nilai Akademik Mahasiswa</title>
+<head><link rel="icon" type="image/png" href="asset/LOGO DEL.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Rekap Nilai Mahasiswa</title>
 </head>
 <body>
+    <!-- Bagian Header Halaman -->
+    <div align="center">
+        <h2>Tabel Perolehan Nilai</h2>
+    </div>
 
-<h2 align="center">Rekap Nilai Akademik Mahasiswa</h2>
+    <!-- Container Tabel Utama -->
+    <div align="center">
+        <table border="1" cellspacing="0" cellpadding="5">
+            <!-- Bagian Header Tabel Level 1 -->
+            <thead>
+                <tr bgcolor="#e0e7ef" align="center">
+                    <th rowspan="3">No</th>
+                    <th rowspan="3">NIM</th>
+                    <th rowspan="3">Nama Mahasiswa</th>
+                    <th rowspan="3">Program Studi</th>
+                    <th rowspan="3">Kelas</th>
+                    <th rowspan="3">Komponen Penilaian<br>Bobot / Skor</th>
+                    
+                    <!-- Grup Kolom Kuis -->
+                    <th colspan="4">Kuis</th>
+                    
+                    <!-- Grup Kolom Proyek -->
+                    <th colspan="5">Proyek</th>
+                    
+                    <!-- Grup Kolom Tugas -->
+                    <th colspan="5">Tugas</th>
+                    
+                    <!-- Grup Kolom UAS -->
+                    <th colspan="4">UAS</th>
+                    
+                    <!-- Grup Kolom UTS -->
+                    <th colspan="6">UTS</th>
+                    
+                    <th rowspan="3">Komponen Penilaian<br>Bobot / Skor</th>
+                </tr>
 
-<table border="1" cellspacing="0" cellpadding="4" align="center">
-  <tr align="center" bgcolor="#e0e7ef">
-    <th rowspan="3">No</th>
-    <th rowspan="3">NIM</th>
-    <th rowspan="3">Nama Mahasiswa</th>
-    <th rowspan="3">Program Studi</th>
-    <th rowspan="3">Kelas</th>
-    <th rowspan="3">Komponen Penilaian<br>Bobot / Skor</th>
-    <th colspan="4">Kuis</th>
-    <th colspan="5">Proyek</th>
-    <th colspan="5">Tugas</th>
-    <th colspan="4">UAS</th>
-    <th colspan="6">UTS</th>
-    <th rowspan="3">Komponen Penilaian<br>Bobot / Skor</th>
-  </tr>
+                <!-- Bagian Header Tabel Level 2 - Sub Kolom -->
+                <tr bgcolor="#e0e7ef" align="center">
+                    <!-- Sub Kolom Kuis -->
+                    <th>K1-1</th>
+                    <th>K1-2</th>
+                    <th>Jumlah</th>
+                    <th>Bobot</th>
+                    
+                    <!-- Sub Kolom Proyek -->
+                    <th>P2-1</th>
+                    <th>P1-1</th>
+                    <th>P3-1</th>
+                    <th>Jumlah</th>
+                    <th>Bobot</th>
+                    
+                    <!-- Sub Kolom Tugas -->
+                    <th>T1-1</th>
+                    <th>T2-1</th>
+                    <th>T3-1</th>
+                    <th>Jumlah</th>
+                    <th>Bobot</th>
+                    
+                    <!-- Sub Kolom UAS -->
+                    <th>UAS1-1</th>
+                    <th>UAS2-1</th>
+                    <th>Jumlah</th>
+                    <th>Bobot</th>
+                    
+                    <!-- Sub Kolom UTS -->
+                    <th>UTS1-1</th>
+                    <th>UTS2-1</th>
+                    <th>UTS2-2</th>
+                    <th>UTS2-3</th>
+                    <th>Jumlah</th>
+                    <th>Bobot</th>
+                </tr>
 
-  <tr align="center" bgcolor="#e0e7ef">
-    <!-- Kuis -->
-    <th>K1-1</th>
-    <th>K1-2</th>
-    <th>Jumlah</th>
-    <th>Bobot</th>
-    <!-- Proyek -->
-    <th>P2-1</th>
-    <th>P1-1</th>
-    <th>P3-1</th>
-    <th>Jumlah</th>
-    <th>Bobot</th>
-    <!-- Tugas -->
-    <th>T1-1</th>
-    <th>T2-1</th>
-    <th>T3-1</th>
-    <th>Jumlah</th>
-    <th>Bobot</th>
-    <!-- UAS -->
-    <th>UAS1-1</th>
-    <th>UAS2-1</th>
-    <th>Jumlah</th>
-    <th>Bobot</th>
-    <!-- UTS -->
-    <th>UTS1-1</th>
-    <th>UTS2-1</th>
-    <th>UTS2-2</th>
-    <th>UTS2-3</th>
-    <th>Jumlah</th>
-    <th>Bobot</th>
-  </tr>
+                <!-- Bagian Baris Pembobotan -->
+                <tr bgcolor="#f0f0f0" align="center">
+                    <!-- Bobot Kuis: 25%, 75%, Total 100%, Kontribusi 10% -->
+                    <td>25</td>
+                    <td>75</td>
+                    <td>100</td>
+                    <td>10</td>
+                    
+                    <!-- Bobot Proyek: 50%, 25%, 25%, Total 100%, Kontribusi 5% -->
+                    <td>50</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>100</td>
+                    <td>5</td>
+                    
+                    <!-- Bobot Tugas: 50%, 25%, 25%, Total 100%, Kontribusi 15% -->
+                    <td>50</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>100</td>
+                    <td>15</td>
+                    
+                    <!-- Bobot UAS: 50%, 50%, Total 100%, Kontribusi 40% -->
+                    <td>50</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>40</td>
+                    
+                    <!-- Bobot UTS: 25%, 25%, 25%, 25%, Total 100%, Kontribusi 30% -->
+                    <td>25</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>100</td>
+                    <td>30</td>
+                </tr>
+            </thead>
 
-  <!-- Baris Pembobotan -->
-  <tr align="center" bgcolor="#f0f0f0">
-    <!-- Kuis -->
-    <td>25</td><td>75</td><td>100</td><td>10</td>
-    <!-- Proyek -->
-    <td>50</td><td>25</td><td>25</td><td>100</td><td>5</td>
-    <!-- Tugas -->
-    <td>50</td><td>25</td><td>25</td><td>100</td><td>15</td>
-    <!-- UAS -->
-    <td>50</td><td>50</td><td>100</td><td>40</td>
-    <!-- UTS -->
-    <td>25</td><td>25</td><td>25</td><td>25</td><td>100</td><td>30</td>
-  </tr>
+            <!-- Bagian Body Tabel - Data Mahasiswa -->
+            <tbody>
+                <!-- Data Mahasiswa 1 -->
+                <tr align="center">
+                    <td>1</td>
+                    <td>11S2400</td>
+                    <td align="left">David Lodewick Simbolon</td>
+                    <td>Sarjana</td>
+                    <td>11IF1</td>
+                    <td>0</td>
+                    <!-- Nilai Kuis -->
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <!-- Nilai Proyek -->
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <!-- Nilai Tugas -->
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <!-- Nilai UAS -->
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <!-- Nilai UTS -->
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td>
+                </tr>
 
-  <!-- Data Peserta Didik -->
-  <tr align="center">
-    <td>1</td>
-    <td>11S2400</td>
-    <td align="left">David Lodewick Simbolon</td>
-    <td>Sarjana</td>
-    <td>11IF1</td>
-     <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-  </tr>
-  <tr align="center">
-    <td>2</td>
-    <td>11S2401</td>
-    <td align="left">Edwin Christoffel</td>
-    <td>Sarjana</td>
-    <td>11IF1</td>
-     <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-  </tr>
-  <tr align="center">
-    <td>3</td>
-    <td>11S2402</td>
-    <td align="left">Aditya Putera Kelat</td>
-    <td>Sarjana</td>
-    <td>11IF1</td>
-     <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-  </tr>
-  <tr align="center">
-    <td>4</td>
-    <td>11S2403</td>
-    <td align="left">Gian Danovan</td>
-    <td>Sarjana</td>
-    <td>11IF1</td>
-     <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-  </tr>
-  <tr align="center">
-    <td>5</td>
-    <td>11S2404</td>
-    <td align="left">Rouli Claudia Panggabean</td>
-    <td>Sarjana</td>
-    <td>11IF1</td>
-     <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-  </tr>
-  <tr align="center">
-    <td>6</td>
-    <td>11S2405</td>
-    <td align="left">Martha Saunia Nababan</td>
-    <td>Sarjana</td>
-    <td>11IF1</td>
-     <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-  </tr>
-  <tr align="center">
-    <td>7</td>
-    <td>11S2406</td>
-    <td align="left">Miftahul Jannah Siregar</td>
-    <td>Sarjana</td>
-    <td>11IF1</td>
-     <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-  </tr>
-  <tr align="center">
-    <td>8</td>
-    <td>11S2407</td>
-    <td align="left">Dea Maranata Siregar</td>
-    <td>Sarjana</td>
-    <td>11IF1</td>
-     <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-  </tr>
-  <tr align="center">
-    <td>9</td>
-    <td>11S2408</td>
-    <td align="left">Sandrina Triana Sihite</td>
-    <td>Sarjana</td>
-    <td>11IF1</td>
-     <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td> <td>0</td><td>0</td><td>0</td><td>0</td>
-  </tr>
-  <tr align="center">
-    <td>10</td>
-    <td>11S2409</td>
-    <td align="left">Dimas Rexan Samuel</td>
-    <td>Sarjana</td>
-    <td>11IF1</td>
-     <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-  </tr>
+                <!-- Data Mahasiswa 2 -->
+                <tr align="center">
+                    <td>2</td>
+                    <td>11S2401</td>
+                    <td align="left">Edwin Christoffel</td>
+                    <td>Sarjana</td>
+                    <td>11IF1</td>
+                    <td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td>
+                </tr>
 
-  <!-- Nilai Rata-rata -->
-  <tr align="center" bgcolor="#e0f7e9">
-    <td colspan="6"><b>Nilai Rata-rata</b></td>
-     <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-    <td>0</td><td>0</td><td>0</td><td>0</td>
-  </tr>
-</table>
-  <p align="left">
-    <a href="index.html"> Halaman Utama</a>
-  </p>
+                <!-- Data Mahasiswa 3 -->
+                <tr align="center">
+                    <td>3</td>
+                    <td>11S2402</td>
+                    <td align="left">Aditya Putera Kelat</td>
+                    <td>Sarjana</td>
+                    <td>11IF1</td>
+                    <td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td>
+                </tr>
 
+                <!-- Data Mahasiswa 4 -->
+                <tr align="center">
+                    <td>4</td>
+                    <td>11S2403</td>
+                    <td align="left">Gian Danovan</td>
+                    <td>Sarjana</td>
+                    <td>11IF1</td>
+                    <td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td>
+                </tr>
+
+                <!-- Data Mahasiswa 5 -->
+                <tr align="center">
+                    <td>5</td>
+                    <td>11S2404</td>
+                    <td align="left">Rouli Claudia Panggabean</td>
+                    <td>Sarjana</td>
+                    <td>11IF1</td>
+                    <td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td>
+                </tr>
+
+                <!-- Data Mahasiswa 6 -->
+                <tr align="center">
+                    <td>6</td>
+                    <td>11S2405</td>
+                    <td align="left">Martha Saunia Nababan</td>
+                    <td>Sarjana</td>
+                    <td>11IF1</td>
+                    <td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td>
+                </tr>
+
+                <!-- Data Mahasiswa 7 -->
+                <tr align="center">
+                    <td>7</td>
+                    <td>11S2406</td>
+                    <td align="left">Miftahul Jannah Siregar</td>
+                    <td>Sarjana</td>
+                    <td>11IF1</td>
+                    <td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td>
+                </tr>
+
+                <!-- Data Mahasiswa 8 -->
+                <tr align="center">
+                    <td>8</td>
+                    <td>11S2407</td>
+                    <td align="left">Dea Maranata Siregar</td>
+                    <td>Sarjana</td>
+                    <td>11IF1</td>
+                    <td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td>
+                </tr>
+
+                <!-- Data Mahasiswa 9 -->
+                <tr align="center">
+                    <td>9</td>
+                    <td>11S2408</td>
+                    <td align="left">Sandrina Triana Sihite</td>
+                    <td>Sarjana</td>
+                    <td>11IF1</td>
+                    <td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td>
+                </tr>
+
+                <!-- Data Mahasiswa 10 -->
+                <tr align="center">
+                    <td>10</td>
+                    <td>11S2409</td>
+                    <td align="left">Dimas Rexan Samuel</td>
+                    <td>Sarjana</td>
+                    <td>11IF1</td>
+                    <td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+
+            <!-- Bagian Footer Tabel - Rata-rata -->
+            <tfoot>
+                <tr bgcolor="#e0f7e9" align="center">
+                    <td colspan="6"><strong>Nilai Rata-rata</strong></td>
+                    <!-- Rata-rata Kuis -->
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <!-- Rata-rata Proyek -->
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <!-- Rata-rata Tugas -->
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <!-- Rata-rata UAS -->
+                    <td>0</td><td>0</td><td>0</td><td>0</td>
+                    <!-- Rata-rata UTS -->
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    <td>0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- Bagian Navigasi -->
+    <div align="left">
+        <p>
+            <a href="index.html">Halaman Utama</a>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="form-pendaftaran.html">Form Pendaftaran</a></li>
+                <li><a href="tabel-nilai.html">Tabel Nilai</a></li>
+                <li><a href="cv.html">Curriculum Vitae</a></li>
+            </ul>
+        </p>
+    </div>
 </body>
 </html>
