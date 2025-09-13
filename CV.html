@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="id">
-<head><link rel="icon" type="image/png" href="asset/LOGO DEL.jpg">
+<head>
+    <!-- Favicon/icon untuk tab browser -->
+    <link rel="icon" type="image/png" href="asset/LOGO DEL.jpg">
+    
+    <!-- Meta tag untuk encoding karakter dan responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Judul halaman yang muncul di tab browser -->
     <title>Curriculum Vitae - Website Portfolio Andre Saragih</title>
 </head>
 <body>
+    <!-- BAGIAN HEADER - berisi judul dan navigasi utama -->
     <header>
         <h1>Curriculum Vitae</h1>
+        
+        <!-- Menu navigasi dengan daftar link ke halaman lain -->
         <nav>
             <ul>
                 <li><a href="index.html">Beranda</a></li>
@@ -19,17 +28,19 @@
         </nav>
     </header>
 
+    <!-- BAGIAN KONTEN UTAMA CV -->
     <main>
-        <!-- Profile Section -->
+        <!-- BAGIAN PROFIL - foto dan informasi dasar -->
         <section>
             <table width="100%">
                 <tr>
+                    <!-- Kolom foto profil dengan lebar tetap -->
                     <td width="150" valign="top">
                         <img src="asset/Andre Pas Foto.png" alt="Foto Profil" width="140" height="180" border="1">
                     </td>
+                    <!-- Kolom informasi profil -->
                     <td valign="top">
-                        <h2>Andre Christian Saragih
-                        </h2>
+                        <h2>Andre Christian Saragih</h2>
                         <h3>Mahasiswa Institut Teknologi DEL</h3>
                         <p><strong>Tempat, Tanggal Lahir:</strong> Medan, 25 Juli 2005</p>
                         <p><strong>Alamat:</strong>Pematang Raya, Simalungun</p>
@@ -40,23 +51,29 @@
             </table>
         </section>
 
+        <!-- Garis pembatas antar section -->
         <hr>
 
-        <!-- Contact Section -->
+        <!-- BAGIAN KONTAK - informasi kontak lengkap -->
         <section>
             <h3>Kontak</h3>
             <ul>
+                <!-- Link email dengan mailto protocol -->
                 <li><strong>Email:</strong> <a href="mailto:andresaragih932@gmail.com">andresaragih932@gmail.com</a></li>
+                <!-- Link WhatsApp dengan wa.me dan target="_blank" untuk tab baru -->
                 <li><strong>WhatsApp:</strong> <a href="https://wa.me/6282284630001" target="_blank">+62 822-8463-0001</a></li>
+                <!-- Link LinkedIn dengan target="_blank" -->
                 <li><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/anchsr" target="_blank">linkedin.com/anchsr</a></li>
+                <!-- Link GitHub -->
                 <li><strong>GitHub:</strong> <a href="https://github.com/ahmadrizky" target="_blank">github.com/ahmadrizky</a></li>
+                <!-- Link Portfolio Website -->
                 <li><strong>Portfolio Website:</strong> <a href="https://github.com/Andre1qaz" target="_blank">Andre1qaz</a></li>
             </ul>
         </section>
 
         <hr>
 
-        <!-- About Section -->
+        <!-- BAGIAN TENTANG SAYA - deskripsi singkat profil -->
         <section>
             <h3>Tentang Saya</h3>
             <p>
@@ -70,23 +87,28 @@
 
         <hr>
 
-        <!-- Education Section -->
+        <!-- BAGIAN PENDIDIKAN - riwayat pendidikan dalam bentuk tabel -->
         <section>
             <h3>Riwayat Pendidikan</h3>
+            <!-- Tabel dengan border dan padding untuk tampilan yang rapi -->
             <table border="1" cellpadding="8" width="100%">
                 <tr>
+                    <!-- Header tabel dengan lebar kolom yang ditentukan -->
                     <th width="15%">Tahun</th>
                     <th width="25%">Institusi</th>
                     <th width="30%">Program Studi</th>
                     <th width="15%">IPK/Nilai</th>
                     <th width="15%">Status</th>
                 </tr>
+                <!-- Data pendidikan S1 (sedang berjalan) -->
                 <tr>
                     <td>2023 - 2027</td>
                     <td>Institut Teknologi DEl</td>
                     <td>S1 Informatika</td>
                     <td>3.1</td>
+                    <td>Sedang Berjalan</td> <!-- Status ini hilang di kode asli -->
                 </tr>
+                <!-- Data pendidikan SMA -->
                 <tr>
                     <td>2020 - 2023</td>
                     <td>SMA Negeri 1 Raya</td>
@@ -94,6 +116,7 @@
                     <td>8.9</td>
                     <td>Lulus</td>
                 </tr>
+                <!-- Data pendidikan SMP -->
                 <tr>
                     <td>2017 - 2020</td>
                     <td>SMP Negeri 1 Raya</td>
@@ -101,6 +124,7 @@
                     <td>8.7</td>
                     <td>Lulus</td>
                 </tr>
+                <!-- Data pendidikan SD -->
                 <tr>
                     <td>2011 - 2017</td>
                     <td>SD Negeri Raya</td>
@@ -113,16 +137,18 @@
 
         <hr>
 
-        <!-- Experience Section -->
+        <!-- BAGIAN PENGALAMAN KERJA - riwayat pekerjaan dalam tabel -->
         <section>
             <h3>Pengalaman Kerja</h3>
             <table border="1" cellpadding="8" width="100%">
                 <tr>
+                    <!-- Header tabel pengalaman kerja -->
                     <th width="20%">Periode</th>
                     <th width="25%">Perusahaan</th>
                     <th width="25%">Posisi</th>
                     <th width="30%">Deskripsi</th>
                 </tr>
+                <!-- Data pengalaman kerja freelance -->
                 <tr>
                     <td>2024 - Sekarang</td>
                     <td>Sribu.com</td>
@@ -134,10 +160,11 @@
 
         <hr>
 
-        <!-- Skills Section -->
+        <!-- BAGIAN KEAHLIAN - dibagi menjadi beberapa kategori -->
         <section>
             <h3>Keahlian</h3>
             
+            <!-- Sub-bagian: Bahasa Pemrograman -->
             <h4>Programming Languages</h4>
             <ul>
                 <li>JavaScript (Beginner)</li>
@@ -148,6 +175,7 @@
                 <li>Java (Beginner)</li>
             </ul>
 
+            <!-- Sub-bagian: Framework dan Library -->
             <h4>Frameworks & Libraries</h4>
             <ul>
                 <li>React.js & Redux (Beginner)</li>
@@ -158,6 +186,7 @@
                 <li>Bootstrap & Tailwind CSS (Beginner)</li>
             </ul>
 
+            <!-- Sub-bagian: Database dan Tools -->
             <h4>Database & Tools</h4>
             <ul>
                 <li>MySQL, PostgreSQL (Beginner)</li>
@@ -171,40 +200,46 @@
 
         <hr>
 
-        <!-- Certificates Section -->
+        <!-- BAGIAN SERTIFIKAT - daftar sertifikat dalam bentuk tabel -->
         <section>
             <h3>Sertifikat</h3>
             <table border="1" cellpadding="8" width="100%">
                 <tr>
+                    <!-- Header tabel sertifikat -->
                     <th width="15%">Tahun</th>
                     <th width="35%">Nama Sertifikat</th>
                     <th width="25%">Penerbit</th>
                     <th width="25%">Nomor Sertifikat</th>
                 </tr>
+                <!-- Data sertifikat AWS -->
                 <tr>
                     <td>2024</td>
                     <td>AWS Certified Developer Associate</td>
                     <td>Amazon Web Services</td>
                     <td>AWS-DEV-2024-001</td>
                 </tr>
+                <!-- Data sertifikat React -->
                 <tr>
                     <td>2023</td>
                     <td>React Advanced Certification</td>
                     <td>Meta (Facebook)</td>
                     <td>META-REACT-2023-456</td>
                 </tr>
+                <!-- Data sertifikat Google Analytics -->
                 <tr>
                     <td>2022</td>
                     <td>Google Analytics Certified</td>
                     <td>Google</td>
                     <td>GOOGLE-GA-2022-789</td>
                 </tr>
+                <!-- Data sertifikat Dicoding Full Stack -->
                 <tr>
                     <td>2021</td>
                     <td>Full Stack Web Development</td>
                     <td>Dicoding Indonesia</td>
                     <td>DICODING-FS-2021-123</td>
                 </tr>
+                <!-- Data sertifikat MySQL -->
                 <tr>
                     <td>2020</td>
                     <td>MySQL Database Administration</td>
@@ -215,3 +250,11 @@
         </section>
 
         <hr>
+        
+        <!-- BAGIAN FOOTER - bisa ditambahkan informasi copyright -->
+        <!-- <footer>
+            <p>&copy; 2025 Andre Christian Saragih. All rights reserved.</p>
+        </footer> -->
+    </main>
+</body>
+</html>
