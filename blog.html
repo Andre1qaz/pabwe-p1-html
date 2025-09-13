@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="id">
-<head><link rel="icon" type="image/png" href="asset/LOGO DEL.jpg">
+<head>
+    <!-- Favicon/icon untuk tab browser -->
+    <link rel="icon" type="image/png" href="asset/LOGO DEL.jpg">
+    
+    <!-- Meta tag untuk encoding karakter dan responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Judul halaman yang muncul di tab browser -->
     <title>Blog - Website Andre</title>
 </head>
 <body>
+    <!-- BAGIAN HEADER - berisi judul dan navigasi utama -->
     <header>
         <h1>Blog</h1>
+        
+        <!-- Menu navigasi dengan daftar link -->
         <nav>
             <ul>
                 <li><a href="index.html">Beranda</a></li>
@@ -19,32 +28,39 @@
         </nav>
     </header>
 
+    <!-- BAGIAN KONTEN UTAMA - berisi daftar artikel blog -->
     <main>
         <h2>Daftar Artikel Blog</h2>
         
-        <!-- Article 1 -->
+        <!-- ARTIKEL 1: Perkembangan Teknologi AI di Indonesia -->
         <article border="1">
+            <!-- Menggunakan tabel untuk layout artikel (metode lama tapi masih berfungsi) -->
             <table border="1" cellpadding="10" width="100%">
                  <tr>
+                    <!-- Kolom gambar artikel - rowspan="4" berarti menggabung 4 baris -->
                     <td rowspan="4" width="200">
                         <img src="asset/konten A.jpeg" alt="Gambar Blog 1" width="180" height="130">
                     </td>
+                    <!-- Kolom judul artikel -->
                     <td>
                         <h3><a href="detail-blog.html">Perkembangan Teknologi AI di Indonesia</a></h3>
                     </td>
                 </tr>
                 <tr>
+                    <!-- Kolom informasi author dengan foto profil bulat -->
                     <td>
                         <img src="asset/Andre Pas Foto.png" alt="Author" width="80" height="80" style="border-radius: 50%;">
                         <strong>Author : Andre Christian Saragih</strong>
                     </td>
                 </tr>
                 <tr>
+                    <!-- Kolom tanggal publikasi -->
                     <td>
                         <strong>Tanggal:</strong> 15 Maret 2025
                     </td>
                 </tr>
                 <tr>
+                    <!-- Kolom label/tag artikel dengan styling inline -->
                     <td>
                         <strong>Label:</strong> 
                         <span style="background-color: #e0e0e0; padding: 2px 8px; margin: 2px;">Teknologi</span>
@@ -55,31 +71,38 @@
             </table>
         </article>
         
+        <!-- Pembatas antar artikel -->
         <br>
 
-        <!-- Article 2 -->
+        <!-- ARTIKEL 2: Tips Belajar Programming untuk Pemula -->
         <article>
+            <!-- Struktur tabel yang sama seperti artikel 1 -->
             <table border="1" cellpadding="10" width="100%">
                 <tr>
+                    <!-- Gambar artikel 2 -->
                     <td rowspan="4" width="200">
                         <img src="asset/konten B.jpeg" alt="Gambar Blog 2" width="180" height="130">
                     </td>
+                    <!-- Judul artikel 2 -->
                     <td>
                         <h3><a href="detail-blog.html">Tips Belajar Programming untuk Pemula</a></h3>
                     </td>
                 </tr>
                 <tr>
+                    <!-- Info author (sama untuk semua artikel) -->
                     <td>
                         <img src="asset/Andre Pas Foto.png" alt="Author" width="80" height="80"style="border-radius: 50%;">
                         <strong>Author : Andre Christian Saragih</strong>
                     </td>
                 </tr>
                 <tr>
+                    <!-- Tanggal publikasi artikel 2 -->
                     <td>
                         <strong>Tanggal:</strong> 12 Maret 2025
                     </td>
                 </tr>
                 <tr>
+                    <!-- Label/tag untuk artikel programming -->
                     <td>
                         <strong>Label:</strong> 
                         <span style="background-color: #e0e0e0; padding: 2px 8px; margin: 2px;">Programming</span>
@@ -91,29 +114,35 @@
         </article>
 
         <br>
-        <!-- Article 3 -->
+        
+        <!-- ARTIKEL 3: Tren Web Design Modern di 2025 -->
         <article>
             <table border="1" cellpadding="10" width="100%">
                 <tr>
+                    <!-- Gambar artikel 3 -->
                     <td rowspan="4" width="200">
                         <img src="asset/Konten C.jpeg" alt="Gambar Blog 3" width="180" height="130">
                     </td>
+                    <!-- Judul artikel 3 -->
                     <td>
                         <h3><a href="detail-blog.html">Tren Web Design Modern di 2025</a></h3>
                     </td>
                 </tr>
                 <tr>
+                    <!-- Info author -->
                     <td>
                         <img src="asset/Andre Pas Foto.png" alt="Author" width="80" height="80"style="border-radius: 50%;">
                         <strong>Author : Andre Christian Saragih</strong>
                     </td>
                 </tr>
                 <tr>
+                    <!-- Tanggal artikel 3 -->
                     <td>
                         <strong>Tanggal:</strong> 10 Maret 2025
                     </td>
                 </tr>
                 <tr>
+                    <!-- Label untuk artikel web design -->
                     <td>
                         <strong>Label:</strong> 
                         <span style="background-color: #e0e0e0; padding: 2px 8px; margin: 2px;">Web Design</span>
@@ -126,29 +155,34 @@
 
         <br>
 
-        <!-- Article 4 -->
+        <!-- ARTIKEL 4: Cara Membuat Aplikasi Mobile yang User-Friendly -->
         <article>
             <table border="1" cellpadding="10" width="100%">
                 <tr>
+                    <!-- Gambar artikel 4 -->
                     <td rowspan="4" width="200">
                         <img src="asset/Konten D.jpeg" alt="Gambar Blog 4" width="180" height="130">
                     </td>
+                    <!-- Judul artikel 4 -->
                     <td>
                         <h3><a href="detail-blog.html">Cara Membuat Aplikasi Mobile yang User-Friendly</a></h3>
                     </td>
                 </tr>
                 <tr>
+                    <!-- Info author -->
                     <td>
                         <img src="asset/Andre Pas Foto.png" alt="Author" width="80" height="80"style="border-radius: 50%;">
                         <strong>Author : Andre Christian Saragih</strong>
                     </td>
                 </tr>
                 <tr>
+                    <!-- Tanggal artikel 4 -->
                     <td>
                         <strong>Tanggal:</strong> 8 Maret 2025
                     </td>
                 </tr>
                 <tr>
+                    <!-- Label untuk artikel mobile development -->
                     <td>
                         <strong>Label:</strong> 
                         <span style="background-color: #e0e0e0; padding: 2px 8px; margin: 2px;">Mobile App</span>
@@ -160,7 +194,7 @@
         </article>
     </main>
 
-    
+    <!-- BAGIAN FOOTER - informasi copyright -->
     <footer>
         <p>&copy; 11S23026_Andre.</p>
     </footer>
