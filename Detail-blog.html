@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="id">
-<head><link rel="icon" type="image/png" href="asset/LOGO DEL.jpg">
+<head>
+    <!-- Favicon/icon untuk tab browser -->
+    <link rel="icon" type="image/png" href="asset/LOGO DEL.jpg">
+    
+    <!-- Meta tag untuk encoding karakter dan responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Judul halaman yang spesifik untuk artikel blog ini -->
     <title>Detail Blog - Perkembangan Teknologi AI di Indonesia</title>
 </head>
 <body>
+    <!-- BAGIAN HEADER - navigasi khusus untuk halaman detail -->
     <header>
         <h1>Detail Blog</h1>
+        
+        <!-- Navigasi sederhana dengan link kembali ke halaman blog -->
         <nav>
             <ul>
                 <li><a href="blog.html">← Kembali ke Blog</a></li>
@@ -15,15 +24,19 @@
         </nav>
     </header>
 
+    <!-- BAGIAN KONTEN UTAMA -->
     <main>
+        <!-- Tag semantic article untuk konten artikel -->
         <article>
 
-            <!-- Author Info -->
+            <!-- BAGIAN INFORMASI AUTHOR - foto dan nama penulis -->
             <table>
                 <tr>
+                    <!-- Kolom foto author dengan ukuran kecil -->
                     <td>
                         <img src="asset/Andre Pas Foto.png" alt="Author Photo" width="50" height="50">
                     </td>
+                    <!-- Kolom informasi author -->
                     <td>
                         <strong>Andre Christian Saragih</strong><br>
                         <em>Technology Enthusiast</em>
@@ -33,12 +46,13 @@
 
             <br>
 
-            <!-- Article Info -->
+            <!-- BAGIAN META INFORMASI ARTIKEL -->
             <p><strong>Tanggal Postingan:</strong> 15 Maret 2025</p>
             
+            <!-- Judul artikel utama -->
             <h2>Perkembangan Teknologi AI di Indonesia</h2>
             
-            <!-- Labels -->
+            <!-- BAGIAN LABEL/TAG artikel dengan styling inline -->
             <p>
                 <strong>Label:</strong> 
                 <span style="background-color: #e0e0e0; padding: 2px 8px; margin: 2px;">Teknologi</span>
@@ -46,15 +60,22 @@
                 <span style="background-color: #e0e0e0; padding: 2px 8px; margin: 2px;">Indonesia</span>
             </p>
 
+            <!-- Garis pembatas sebelum konten utama -->
             <hr>
 
-            <!-- Blog Content -->
+            <!-- BAGIAN KONTEN ARTIKEL UTAMA -->
             <h3>Deskripsi Blog</h3>
+            
+            <!-- Paragraf pembuka artikel -->
             <p>Teknologi Artificial Intelligence (AI) atau Kecerdasan Buatan telah mengalami perkembangan yang sangat pesat di Indonesia dalam beberapa tahun terakhir. Berbagai sektor mulai dari perbankan, kesehatan, hingga pendidikan telah mulai mengadopsi teknologi ini untuk meningkatkan efisiensi dan pelayanan.</p>
 
+            <!-- Paragraf kedua tentang potensi Indonesia -->
             <p>Indonesia sebagai negara dengan populasi terbesar keempat di dunia memiliki potensi yang sangat besar dalam penerapan teknologi AI. Pemerintah Indonesia juga telah menunjukkan komitmennya dalam pengembangan AI melalui berbagai program dan inisiatif nasional.</p>
 
+            <!-- Sub-bagian dengan heading h4 -->
             <h4>Sektor-sektor yang Telah Mengadopsi AI</h4>
+            
+            <!-- Daftar sektor dengan penjelasan detail -->
             <ul>
                 <li><strong>Perbankan:</strong> Chatbot untuk customer service, analisis kredit, dan deteksi fraud</li>
                 <li><strong>E-commerce:</strong> Sistem rekomendasi produk dan personalisasi pengalaman berbelanja</li>
@@ -62,27 +83,35 @@
                 <li><strong>Transportasi:</strong> Aplikasi ride-hailing dengan optimasi rute berbasis AI</li>
             </ul>
 
+            <!-- Paragraf penutup artikel -->
             <p>Ke depannya, Indonesia diharapkan dapat menjadi salah satu pemain utama dalam ekosistem AI di Asia Tenggara dengan dukungan SDM yang berkualitas dan infrastruktur teknologi yang memadai.</p>
 
+            <!-- Garis pembatas sebelum bagian komentar -->
             <hr>
 
-            <!-- Comment Form -->
+            <!-- BAGIAN FORM KOMENTAR - untuk interaksi user -->
             <h3>Tinggalkan Komentar</h3>
+            
+            <!-- Form dengan method POST untuk mengirim komentar -->
             <form action="#" method="post">
                 <table>
                     <tr>
+                        <!-- Input field untuk nama -->
                         <td><label for="nama">Nama:</label></td>
                         <td><input type="text" id="nama" name="nama" required></td>
                     </tr>
                     <tr>
+                        <!-- Input field untuk email dengan validasi email -->
                         <td><label for="email">Email:</label></td>
                         <td><input type="email" id="email" name="email" required></td>
                     </tr>
                     <tr>
+                        <!-- Textarea untuk komentar dengan ukuran tetap -->
                         <td><label for="komentar">Komentar:</label></td>
                         <td><textarea id="komentar" name="komentar" rows="5" cols="50" required></textarea></td>
                     </tr>
                     <tr>
+                        <!-- Tombol submit untuk mengirim komentar -->
                         <td></td>
                         <td><input type="submit" value="Kirim Komentar"></td>
                     </tr>
@@ -91,15 +120,17 @@
 
             <hr>
 
-            <!-- Comments List -->
+            <!-- BAGIAN DAFTAR KOMENTAR YANG SUDAH ADA -->
             <h3>Komentar (3)</h3>
             
-            <!-- Comment 1 -->
+            <!-- KOMENTAR 1 dari Olivia -->
             <table border="1" cellpadding="10" width="100%">
                 <tr>
+                    <!-- Kolom foto user dengan lebar tetap -->
                     <td width="60">
                         <img src="asset/User.jpeg" alt="User Photo" width="50" height="50">
                     </td>
+                    <!-- Kolom konten komentar -->
                     <td>
                         <strong>Olivia</strong><br>
                         <em>16 Maret 2025, 09:30</em><br><br>
@@ -110,12 +141,14 @@
 
             <br>
 
-            <!-- Comment 2 -->
+            <!-- KOMENTAR 2 dari Lamtiur -->
             <table border="1" cellpadding="10" width="100%">
                 <tr>
+                    <!-- Foto user yang sama untuk semua komentar -->
                     <td width="60">
                         <img src="asset/User.jpeg" alt="User Photo" width="50" height="50">
                     </td>
+                    <!-- Konten komentar dengan pertanyaan -->
                     <td>
                         <strong>Lamtiur</strong><br>
                         <em>16 Maret 2025, 14:15</em><br><br>
@@ -126,12 +159,14 @@
 
             <br>
 
-            <!-- Comment 3 -->
+            <!-- KOMENTAR 3 dari Grace -->
             <table border="1" cellpadding="10" width="100%">
                 <tr>
+                    <!-- Foto user -->
                     <td width="60">
                         <img src="asset/User.jpeg" alt="User Photo" width="50" height="50">
                     </td>
+                    <!-- Konten komentar tentang pengalaman pribadi -->
                     <td>
                         <strong>Grace</strong><br>
                         <em>17 Maret 2025, 08:45</em><br><br>
@@ -143,6 +178,7 @@
         </article>
     </main>
 
+    <!-- BAGIAN FOOTER - informasi copyright -->
     <footer>
         <p>&copy; 11S23026_Andre.</p>
     </footer>
